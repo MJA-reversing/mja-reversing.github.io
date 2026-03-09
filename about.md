@@ -12,4 +12,4 @@ This blog documents my journey through:
 - Vulnerability discovery
 - Systems internals
 
-All opinions are my own and do not reflect the views and opinions of my employers. Everything here is part of learning in public and building real research skills. Happy hunting!
+All opinions expressed on this site are my own and do not reflect the views and opinions of my employers. Everything here is part of learning in public and building real research skills. Happy hunting!
