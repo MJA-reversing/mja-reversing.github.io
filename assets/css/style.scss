@@ -266,13 +266,10 @@ a:hover {
   color: #57606a;
 }
 
-pre {
-  background: #0d1117;
-  color: #c9d1d9;
-  padding: 16px;
-  border-radius: 6px;
+.highlight {
+  background: #0d1117 !important;
 }
 
-code {
-  background: #0d1117;
+.highlight pre {
+  background: #0d1117 !important;
 }
