@@ -6,7 +6,7 @@ theme: jekyll-theme-slate
 title: "Under the Hood: Adventures in Security Research"
 description: "Exploring malware, vulnerabilities, and reverse engineering software to find out how it really works."
 url: "https://mja-reversing.github.io"
-baseurl: "https://mja-reversing.github.io"
+baseurl: ""
 
 # Author Info
 author:
