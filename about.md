@@ -4,7 +4,7 @@ permalink: /about/
 layout: default
 ---
 
-Hi, I'm Matt — a malware analyst and security researcher focused on understanding software at a low level.
+Hi, I'm Matt Allan— a malware analyst and security researcher focused on understanding software at a low level.
 
 This blog documents my journey through:
 - Reverse engineering
