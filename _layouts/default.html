@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
 
-  <!-- Correct CSS linking for home page and nested blog posts -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
+  <body>
+    <header style="text-align:center; padding:30px 0;">
+      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
 
-  <div class="site-header">
-    <h1><a href="{{ '/' | relative_url }}">My Blog</a></h1>
-  </div>
+      <nav style="margin-top:15px;">
+        <a href="{{ '/' | relative_url }}">Home</a> |
+        <a href="{{ '/blog/' | relative_url }}">Blog</a> |
+        <a href="{{ '/about/' | relative_url }}">About</a> |
+      </nav>
+    </header>
 
-  <div class="post-container">
-    <article>
-      <h1>{{ page.title }}</h1>
-
-      <!-- Date and optional author -->
-      <p class="post-meta">
-        {{ page.date | date: "%B %d, %Y" }}
-        {% if page.author %}
-          &nbsp;•&nbsp;by {{ page.author }}
-        {% endif %}
-      </p>
-
-      <div class="post-content">
-        {{ content }}
-      </div>
-    </article>
-  </div>
-
-  <div class="site-footer">
-    <p>&copy; {{ site.time | date: "%Y" }} My Blog</p>
-  </div>
-
-</body>
+    <main style="max-width: 900px; margin: 40px auto;">
+      {{ content }}
+    </main>
+  </body>
 </html>
